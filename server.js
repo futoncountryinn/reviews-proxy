@@ -6,8 +6,8 @@ const port = process.env.PORT || 3000;
 const cors = require('cors');
 
 app.use(morgan('dev'));
-app.get('/loaderio-9e34130a1504bcf458ee72dab275d03f', (req, res) => {
-  res.sendFile(__dirname + '/loaderio-9e34130a1504bcf458ee72dab275d03f.txt');
+app.get('/loaderio-553d004fe17f1afcb7139ccac98d8ba6', (req, res) => {
+  res.sendFile(__dirname + '/loaderio-553d004fe17f1afcb7139ccac98d8ba6.txt');
 });
 app.use('*', cors(), express.static(path.join(__dirname, 'public')));
 app.listen(port, () => {
